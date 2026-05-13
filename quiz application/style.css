@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+     min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    border-radius: 10px;
+    width: 55%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    /* display: none; */
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid red;
+}
+
+.header div p {
+    margin-bottom: 4px;
+}
+
+.body h1 {
+    padding: 8px 0;
+}
+
+.body ul li {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 8px 0;
+    list-style: none;
+    /* color: white;   */
+}
+
+.body ul li:hover {
+    background: lightslategray;
+    color: white;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid red;
+    padding-top: 12px;
+}
+
+.footer button {
+    background-color: blue;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+}
+
+.reportCard-parent {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.reportCard {
+    display: none;
+    border-radius: 15px;
+    box-shadow: 10px 5px 10px black;
+    width: 25%;
+    height: 250px;
+    padding: 20px;
+    background-color: skyblue;
+    color: brown;
+}
+
+.reportCard h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid blue;
+}
+
+.reportCard p {
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+.try-btn {
+    display: flex;
+    justify-content: end;
+}
+.try-btn button {
+    background-color: blue;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+@media (max-width : 600px) {
+    .container {
+        border-radius: 10px;
+        width: 90%;
+        margin: 25px auto;
+        padding: 15px;
+    }
+
+
+    .header {
+        font-size: x-small;
+    }
+
+    .body h1 {
+        font-size: large;
+    }
+
+    .body ul li {
+        font-size: small;
+    }
+
+    .footer button {
+        padding: 8px 16px;
+        font-size: x-small;
+    }
+
+    .reportCard-parent {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reportCard {
+        width: 60%;
+
+    }
+}
