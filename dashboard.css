@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header h1{
+    color: white;
+    font-size: 40px;
+}
+
+.btns {
+    display: flex;
+    gap: 8px;
+}
+
+.addBtn {
+    background: white;
+    color: #0072ff;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.allDeleteBtn {
+    background: white;
+    color: #e60000;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addBtn:hover,
+.allDeleteBtn:hover {
+    transform: translateY(-3px);
+    background:  #f1f1f1;
+}
+
+.notes{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.note{
+    background-color: white;
+    border-radius: 18px;
+    padding: 20px;
+    min-height: 220px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    position: relative;
+    animation: fade 0.3s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.note textarea{
+    width: 100%;
+    height: 160px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+    color: #333;
+}
+
+.delete{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #ff4d4d;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete:hover{
+    background: #e60000;
+    transform: scale(1.1);
+}
+
+
+ @media(max-width:600px){
+
+      body{
+        padding:20px;
+      }
+
+      .header h1{
+        font-size:28px;
+      }
+
+      .btns{
+        width: 100%;
+      }
+
+      .addBtn{
+        width:50%;
+      }
+
+      .allDeleteBtn{
+        width:50%;
+      }
+
+    }
+
+
+
