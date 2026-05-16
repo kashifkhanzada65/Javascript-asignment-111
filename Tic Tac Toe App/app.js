@@ -49,9 +49,11 @@ cells.forEach((cell) => {
     })
 
 }
-)
+);
 
 const checkWinner = () => {
+
+    let isWinner = false;
 
     for (let pattern of winningPattens) {
 
@@ -62,7 +64,9 @@ const checkWinner = () => {
         if (value1 != '' && value2 != '' && value3 != '') {
             if (value1 === value2 && value2 === value3) {
 
-                para.innerHTML = `Congratulation, winner is ${value1}`;
+                para.innerHTML = `🎉 Congratulation, winner is ${value1}`;
+
+                isWinner = true;
 
                 cells.forEach((cell) => {
                     cell.disabled = true
@@ -74,5 +78,23 @@ const checkWinner = () => {
             }
         }
     }
+
+    let isDraw = true;
+
+    cells.forEach((cell) => {
+        if (cell.innerHTML === '') {
+            isDraw = false;
+        }
+    });
+
+    if (!isWinner && isDraw) {
+        para.innerHTML = '🤝 Match Draw!';
+        reset_btn.style.display = 'none';
+        restart_btn.style.display = 'block';
+    }
 }
+
+
+
+
 
