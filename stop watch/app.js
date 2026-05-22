@@ -8,7 +8,7 @@ var msec = 0;
 var interval ;
 
 function startTimer(){
-    if(interval) return
+    clearInterval(interval);
     interval=setInterval(timer , 10)
 }
 
