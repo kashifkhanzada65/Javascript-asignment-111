@@ -50,6 +50,7 @@ body{
 .time h1{
   font-size:50px;
   margin:0;
+  color: black;
 }
 
 .time span{
@@ -76,20 +77,16 @@ button:hover{
 
 @media (max-width:768px){
 
-<<<<<<< HEAD
    body{
     align-items:flex-start;   /* sab cheez upar chali jayegi */
     padding-top:40px;         /* thoda space upar */
   }
 
-=======
->>>>>>> 2bcac72 (Add files via upload)
   .container{
     flex-direction:column;
     gap:30px;
   }
 
-<<<<<<< HEAD
    .left{
     margin-bottom: 40px; 
   }
@@ -99,8 +96,6 @@ button:hover{
     margin-top:20px;   
   }
 
-=======
->>>>>>> 2bcac72 (Add files via upload)
   .left h2{
     font-size:30px;
   }
